@@ -1,0 +1,234 @@
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with OpenPose model BODY_25B, for adhd.mp4.
+Rotation metadata not supported by OpenPose: converting video...
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 31.75 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 14.52 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 10.52 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 6.96 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 100.73 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 7.02 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['right ankle', 'left ankle', 'right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 18.66 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow', 'Right wrist', 'Left wrist']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 10.56 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow', 'Right wrist', 'Left wrist']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Pelvis', 'Trunk', 'Shoulders', 'Head', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+
+
+---------------------------------------------------------------------
+Detecting pose for video adhd.mp4
+---------------------------------------------------------------------
+2D joint positions have already been detected. To run the analysis over again from the beginning, set "overwrite_pose" to true in Advanced pose settings.
+Sorting people across frames.
+2 persons found.
+Person 0: Interpolating missing sequences if they are smaller than 5 frames.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person0_points.csv.
+Person 1: Interpolating missing sequences if they are smaller than 5 frames.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv position file in D:\Project\adhd-identify\adhd_BODY_25B_person1_points.csv.
+Saving images and video in D:\Project\adhd-identify.
+Pose detection took 9.38 s.
+
+
+---------------------------------------------------------------------
+Computing angles for video adhd.mp4 
+for ['Right knee', 'Left knee', 'Right hip', 'Left hip']
+and ['Right shank', 'Left shank', 'Right thigh', 'Left thigh'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Project\adhd-identify...
+2 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 0: Saving csv angle file in D:\Project\adhd-identify\adhd_BODY_25B_person0_angles.csv.
+Person 0: Displaying figures.
+Person 1: Computing 2D joint and segment angles.
+Person 1: Filtering with Butterworth filter, 4th order, 6 Hz..
+Person 1: Saving csv angle file in D:\Project\adhd-identify\adhd_BODY_25B_person1_angles.csv.
+Person 1: Displaying figures.
