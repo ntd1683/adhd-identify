@@ -10,7 +10,7 @@ def main_menu():
     while True:
         print("\nMenu:")
         print("1. Phân tích video từ file TOML")
-        print("2. Phân tích file CSV ADHD")
+        print("2. Phân tích file angle ADHD")
         print("3. Kết thúc")
 
         choice = input("Chọn một tùy chọn (1-3): ")
@@ -22,25 +22,23 @@ def main_menu():
                 logging.warning(f"File TOML {name_file_toml} không hợp lệ.")
             else:
                 if os.path.exists(name_file_toml):
-                    Sports2D.detect_pose(name_file_toml)
-                    Sports2D.compute_angles(name_file_toml)
+                    Sports2D.process(name_file_toml)
                 else:
                     logging.warning("File TOML không tồn tại.")
 
         elif choice == '2':
-            name_file_csv = input("Nhập tên file CSV: ")
+            print("VD Tên file : ./input/angles.mot")
+            name_file_csv = input("Nhập tên file phân tích: ")
 
-            if not name_file_csv.endswith('_angles.csv'):
-                logging.warning(f"File CSV {name_file_csv} không hợp lệ.")
-            else:
-                if os.path.exists(name_file_csv):
-                    results = adhd_cal.adhd_cal(name_file_csv)
-                    if results:
-                        print("ADHD detected!")
-                    else:
-                        print("ADHD not detected!")
+            if os.path.exists(name_file_csv):
+                results = adhd_cal.adhd_cal(name_file_csv)
+                if results:
+                    print("Determine if the leg moves!")
                 else:
-                    logging.warning("File CSV không tồn tại.")
+                    print("Determine if the leg does not move!")
+            else:
+                logging.warning("File không tồn tại.")
+
         elif choice == '3':
             print("Kết thúc chương trình. Tạm biệt!")
             break
