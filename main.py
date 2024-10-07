@@ -30,6 +30,11 @@ def main_menu():
             print("VD Tên file : ./input/angles.mot")
             name_file_csv = input("Nhập tên file phân tích: ")
 
+            if name_file_csv[0] == "\"" and name_file_csv[-1] == "\"":
+                name_file_csv = name_file_csv[1:-1]
+
+            print("Name file csv: ", name_file_csv)
+
             if os.path.exists(name_file_csv):
                 results = adhd_cal.adhd_cal(name_file_csv)
                 if results:

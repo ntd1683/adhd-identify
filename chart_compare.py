@@ -41,8 +41,8 @@ class PlotTab(QWidget):
         canvas = FigureCanvas(figure)
         layout.addWidget(canvas)
 
-        ax.plot(non_patients_data['time'], non_patients_data[column_en], label='Người có hoạt động')
-        ax.plot(patients_data['time'], patients_data[column_en], label='Người không hoạt động')
+        ax.plot(non_patients_data['time'], non_patients_data[column_en], label='Người không hoạt động')
+        ax.plot(patients_data['time'], patients_data[column_en], label='Người có hoạt động')
         ax.set_xlabel('Thời gian')
         ax.set_ylabel(f'{column_vn}')
         ax.set_title(f'So sánh {column_vn}: Người bệnh vs Người khỏe')
@@ -77,7 +77,7 @@ class MainWindow(QMainWindow):
                                  'cẳng chân trái', 'đùi phải', 'đùi trái']
 
         # Tạo từ điển ánh xạ
-        column_mapping = dict(zip(columns_of_interest, columns_of_interestVN))
+        column_mapping = dict(zip(columns_of_interest, columns_of_interest))
 
         for column_en, column_vn in column_mapping.items():
             tab = PlotTab(patients_data, non_patients_data, column_en, column_vn)

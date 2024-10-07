@@ -18,20 +18,21 @@ def csv_min_max_cal(filename='angles.csv', threshold=10, columns_of_interest=Non
     """Tính toán giá trị min và max cho các cột quan tâm trong file CSV."""
     if columns_of_interest is None:
         # add time column
-        # columns_of_interest = ['time', 'right knee', 'left knee', 'right hip', 'left hip',
-        #                        'right shank', 'left shank', 'right thigh', 'left thigh']
-        columns_of_interest = ['right knee', 'left knee', 'right hip', 'left hip',
+        columns_of_interest = ['time', 'right knee', 'left knee', 'right hip', 'left hip',
                                'right shank', 'left shank', 'right thigh', 'left thigh']
+        # columns_of_interest = ['right knee', 'left knee', 'right hip', 'left hip',
+        #                        'right shank', 'left shank', 'right thigh', 'left thigh']
 
     data = defaultdict(list)
     with open(filename, 'r') as file:
+    # with open("D:\Project\\adhd-identify\output\\adhd0_Sports2D\\adhd0_Sports2D_angles_person00.mot", 'r') as file:
         csv_reader = csv.reader(file)
         for _ in range(10):  # Bỏ qua 10 dòng đầu tiên (metadata)
             next(csv_reader)
         headers = next(csv_reader)  # Tên cột từ dòng thứ 11
         headers_list = headers[0].split('\t')
         col_indices = {col: headers_list.index(col) for col in columns_of_interest if col in headers_list}
-        print("Col indices: ", col_indices)
+        # print("Col indices: ", col_indices)
 
         count_time = 0
         for row in csv_reader:
@@ -47,30 +48,36 @@ def csv_min_max_cal(filename='angles.csv', threshold=10, columns_of_interest=Non
     results = {}
     stable_columns_count = 0
     count_part = {}
-    print("Count time: ", count_time)
-    print("Columns of interest: ", data['time'])
+    # print("Count time: ", count_time)
+    print("Columns of interest: ", max(data['time']))
     for col in columns_of_interest:
         if data[col]:
             if is_stable(data[col]):
                 stable_columns_count += 1
             else:
-                results[col] = {'min': min(data[col]), 'max': max(data[col])}
-                print("Column: ", col, "Length : ", len(data[col]))
-                num_parts = 10
-                part_size = math.ceil(len(data[col]) / num_parts)
-                for part_num in range(num_parts):
-                    # Tính chỉ số bắt đầu và kết thúc của từng phần
-                    start_index = part_num * part_size
-                    end_index = min(start_index + part_size, len(data[col]))
-                    chunk = data[col][start_index:end_index]
+                if max(data["time"]) > 10:
+                    results[col] = {'min': min(data[col]), 'max': max(data[col])}
+                    print("Column: ", col, "Length : ", len(data[col]))
+                    num_parts = 10
+                    part_size = math.ceil(len(data[col]) / num_parts)
+                    for part_num in range(num_parts):
+                        # Tính chỉ số bắt đầu và kết thúc của từng phần
+                        start_index = part_num * part_size
+                        end_index = min(start_index + part_size, len(data[col]))
+                        chunk = data[col][start_index:end_index]
 
-                    if len(chunk) > 0:
-                        results[f"{col}_part_{part_num + 1}"] = {'min': min(chunk), 'max': max(chunk)}
+                        if len(chunk) > 0:
+                            results[f"{col}_part_{part_num + 1}"] = {'min': min(chunk), 'max': max(chunk)}
 
-                        if max(chunk) - min(chunk) > threshold:
-                            count_part[f"{col}"] = count_part.get(f"{col}", 0) + 1
+                            if max(chunk) - min(chunk) > threshold:
+                                count_part[f"{col}"] = count_part.get(f"{col}", 0) + 1
+                else:
+                    print("data < 10")
+                    results[col] = {'min': min(data[col]), 'max': max(data[col])}
+                    if max(data[col]) - min(data[col]) > threshold:
+                        count_part[col] = 10
 
-    print("Results : ", results)
+    print("Results : ", results.pop('time', None))
     print("Count part: ", count_part)
     result_count = 0
     for col in count_part:
@@ -90,5 +97,7 @@ def adhd_cal(filename='angles.csv', count=5, threshold=10):
     if result_count == -1:
         logging.warning(" Data no changes, this data is not for human consumption, please review the data.")
         return False
+
+    print("Result count: ", result_count)
 
     return result_count >= count
